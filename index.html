@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="codex.css">
+    <title>Codex.project</title>
+</head>
+<body>
+    <div class="all">
+        <div id="sketch" style="background-repeat: no-repeat; background-size: 100%; height: 300px;" class="image">
+            <canvas id="paint" class="dog-img"></canvas>
+        </div>   
+
+        <div class="editor">
+            <p class="tool-text">Tool</p>
+            <div class="function-buttons">
+                <button class="Brush-button">Brush</button>
+                <button class="Blur-button">Blur</button>
+            </div>
+            <p class="color-text">Color</p>
+            <div class="color-buttons">
+                <button class="color" id="red"></button>
+                <button class="color" id="yellow"></button>
+                <button class="color" id="green"></button>
+                <button class="color" id="blue"></button>
+                <button class="color" id="purple"></button>
+                <button class="color" id="black"></button>
+                <button class="color" id="white"></button>
+            </div>
+
+            <div class="size-scroll">
+                <p class="size-text">Size</p>
+                <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+            </div>
+
+            <div class="save-div">
+                <button class="save-button">Save</button>
+                <button class="back-button">&#8634;</button>
+                <button class="forward-button">&#8635;</button>
+            </div>
+        </div>
+    </div>
+    <script src="codex.js"></script>
+</body>
+</html>
